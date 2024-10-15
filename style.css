@@ -123,7 +123,7 @@ body {
 	margin-bottom: 15px;
 	width: 100%;
 	height: 55px;
-	background: #000;
+	background: var(--black);
 	color: #fff;
 	padding-top: 16px; /* Отступ сверху для сдвига текста вниз */
 	padding-left: 15px; /* Отступ слева для сдвига текста влево */
@@ -199,7 +199,7 @@ body {
 	border-radius: 35px;
 	color: #fff;
 	box-shadow: 0px 2px 4.5px 0px rgba(0, 0, 0, 0.25);
-	background: rgb(43, 42, 41);
+	background: var(--black);
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 20px;
