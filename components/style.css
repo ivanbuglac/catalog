@@ -1,0 +1,187 @@
+:root {
+	--black: #2b2a29;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 270px;
+	height: 360px;
+
+	box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.29);
+	background: rgb(255, 255, 255);
+}
+
+.container .container__image {
+	width: 250px;
+	height: 130px;
+	padding: 10px 10px;
+	background: url('../assets/1.png.png');
+	background-repeat: no-repeat;
+}
+
+.container .container__title {
+	color: rgb(29, 31, 34);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 23px;
+	padding: 5px;
+}
+
+.container .container__description {
+	color: rgb(29, 31, 34);
+	font-family: Times New Roman;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18px;
+	padding: 5px;
+}
+
+.container .buy {
+	display: flex;
+	position: absolute;
+}
+
+.container .container__price {
+	color: rgb(29, 31, 34);
+	font-family: Gilroy;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 32px;
+	position: relative;
+	top: 18px;
+	padding-left: 10px;
+}
+
+.container .price-btn {
+	position: relative;
+	top: 10px;
+	left: 160px;
+	width: 40px;
+	height: 40px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(3, 280px); /* 3 колонки с одинаковой шириной */
+}
+
+.basket {
+	position: fixed;
+	right: 260px;
+	width: 370px;
+	max-height: 695px;
+	background-color: #fff;
+	top: 20px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.29);
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.basket::-webkit-scrollbar {
+	width: 12px;
+}
+
+.basket::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+}
+
+.basket::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+.basket::-webkit-scrollbar-button:end:increment {
+	height: 60%;
+	background: transparent;
+}
+
+/* Для Firefox */
+
+.basket h2 {
+	font-size: 24px;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 55px;
+	background: #000;
+	color: #fff;
+	padding-top: 16px; /* Отступ сверху для сдвига текста вниз */
+	padding-left: 15px; /* Отступ слева для сдвига текста влево */
+	box-sizing: border-box;
+}
+
+.basket p {
+	font-size: 18px;
+}
+
+.mini-card {
+	width: 370px;
+	height: 70px;
+	box-sizing: border-box;
+	padding: 10px;
+	display: flex;
+	align-items: flex-start;
+	border-bottom: 1px solid;
+}
+
+.mini-card .small__pictre {
+	width: 48px;
+	height: 48px;
+}
+.product-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.mini-card .small__title {
+	color: rgb(29, 31, 34);
+	font-family: Times New Roman;
+	font-size: 19.2px;
+	font-weight: 400;
+	line-height: 16px;
+	margin-top: 3.5px;
+}
+
+.mini-card .small__price {
+	color: rgb(29, 31, 34);
+	font-family: Gilroy;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	margin-top: 6px;
+}
+
+.mini-card .delete {
+	position: absolute;
+	right: 15.64px;
+	margin-top: 10px;
+}
+
+.total {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.total .total__price {
+	color: rgb(8, 1, 17);
+	font-family: Gotham Pro;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 31px;
+}
+
+.total .total_btn button {
+	padding: 16px 50px 16px 50px;
+	margin-top: 16px;
+	border: 2px solid rgb(43, 42, 41);
+	border-radius: 35px;
+	color: #fff;
+	box-shadow: 0px 2px 4.5px 0px rgba(0, 0, 0, 0.25);
+	background: rgb(43, 42, 41);
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
