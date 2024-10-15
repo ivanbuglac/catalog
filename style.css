@@ -93,6 +93,10 @@ body {
 	margin-right: 10px;
 }
 
+.container .buy .price-btn:hover {
+	opacity: 0.85;
+}
+
 .basket {
 	position: absolute;
 	right: 140px;
@@ -203,6 +207,9 @@ body {
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 20px;
+}
+.total .total_btn button:hover {
+	opacity: 0.85;
 }
 
 .footer {
