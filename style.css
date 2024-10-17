@@ -22,7 +22,7 @@ body {
 	background: var(--black);
 }
 
-.container-header {
+.container__header {
 	position: relative;
 	top: 15.5px;
 	left: 15px;
@@ -32,7 +32,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 375px;
 	max-width: 1240px;
-	margin-left: 130px;
+	margin: 0 auto;
 }
 
 .catalog {
@@ -40,7 +40,7 @@ body {
 	grid-template-columns: repeat(3, 280px);
 }
 
-.container {
+.container__card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -53,7 +53,7 @@ body {
 	position: relative;
 }
 
-.container .container__image {
+.container__card .container__card_image {
 	width: 250px;
 	height: 130px;
 	padding: 10px 10px;
@@ -61,7 +61,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-.container .container__title {
+.container__card .container__card_title {
 	color: rgb(29, 31, 34);
 	font-size: 20px;
 	font-weight: 700;
@@ -69,7 +69,7 @@ body {
 	padding: 5px;
 }
 
-.container .container__description {
+.container__card .container__card_description {
 	color: rgb(29, 31, 34);
 	font-family: Times New Roman;
 	font-size: 16px;
@@ -79,14 +79,14 @@ body {
 	flex-grow: 1;
 }
 
-.container .buy {
+.container__card .buy {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px 0;
 }
 
-.container .buy .container__price {
+.container__card .buy .container__price {
 	color: rgb(29, 31, 34);
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 24px;
@@ -95,14 +95,32 @@ body {
 	padding-left: 10px;
 }
 
-.container .buy .price-btn {
+.container__card .buy .price__btn {
 	width: 40px;
 	height: 40px;
 	margin-right: 10px;
 }
 
-.container .buy .price-btn:hover {
+.container__card .buy .price__btn:hover {
 	opacity: 0.85;
+}
+
+.btn__show_more {
+	padding-top: 10px;
+	position: relative;
+	left: 310px;
+}
+
+.btn__show_more button {
+	width: 200px;
+	height: 44px;
+	padding: 10px 50px 10px 50px;
+	box-sizing: border-box;
+	border: 2px solid rgb(29, 31, 34);
+	border-radius: 44.8px;
+
+	box-shadow: 0px 2px 4.8px 0px rgba(0, 0, 0, 0.25);
+	background: rgb(255, 255, 255);
 }
 
 .basket {
@@ -136,8 +154,8 @@ body {
 	height: 55px;
 	background: var(--black);
 	color: #fff;
-	padding-top: 16px; /* Отступ сверху для сдвига текста вниз */
-	padding-left: 15px; /* Отступ слева для сдвига текста влево */
+	padding-top: 16px;
+	padding-left: 15px;
 	box-sizing: border-box;
 }
 
