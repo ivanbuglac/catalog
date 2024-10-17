@@ -129,12 +129,8 @@ body {
 	margin-top: 10px;
 	width: 370px;
 	max-height: 695px;
-	background-color: #fff;
 
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.29);
-
-	overflow-y: auto;
-	overflow-x: hidden;
 }
 .basket::-webkit-scrollbar {
 	width: 12px;
@@ -165,8 +161,15 @@ body {
 	font-size: 18px;
 }
 
-.mini-card {
+.basket__mini-card {
 	width: 370px;
+	max-height: 495px;
+	background-color: #fff;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.mini-card {
 	height: 70px;
 	box-sizing: border-box;
 	padding: 10px;
@@ -176,7 +179,7 @@ body {
 	position: relative;
 }
 
-.mini-card .small__pictre {
+.mini-card .mini-card__picture {
 	width: 48px;
 	height: 48px;
 }
@@ -185,7 +188,7 @@ body {
 	flex-direction: column;
 }
 
-.mini-card .small__title {
+.mini-card .mini-card__title {
 	color: rgb(29, 31, 34);
 	font-family: Times New Roman;
 	font-size: 19.2px;
@@ -194,7 +197,7 @@ body {
 	margin-top: 3.5px;
 }
 
-.mini-card .small__price {
+.mini-card .mini-card__price {
 	color: rgb(29, 31, 34);
 	font-family: Gilroy;
 	font-size: 16px;
@@ -210,7 +213,9 @@ body {
 }
 
 .total {
-	margin-top: 20px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 70px;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -235,7 +240,6 @@ body {
 	background: var(--black);
 	font-size: 24px;
 	font-weight: 600;
-	margin-bottom: 20px;
 }
 .total .total_btn button:hover {
 	opacity: 0.85;
